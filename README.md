@@ -2,6 +2,12 @@
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
+# Project addresses
+* Migrations: 0x91A19FA8E37c1fE574F92292c6A3f7A5a3467e0E
+* Verifier: 0xab23E55F41Fc4B7A161Ca17300f45B06eC751DBa
+* SolnSqureVerifier: 0x9D58ebD5B8569Abc7769B067C4388508416C0391
+* OpenSea: https://testnets.opensea.io/collection/unidentified-contract-h63vtcp1cs?tab=activity
+
 # Project Resources
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)

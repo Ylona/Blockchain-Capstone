@@ -2,6 +2,35 @@
 
 // Test verification with correct proof
 // - use the contents from proof.json generated from zokrates steps
-
+let zokratesProof = require('../../zokrates/code/proof');
+let Verifier = artifacts.require('./Verifier');
     
 // Test verification with incorrect proof
+
+
+contract('SquareVerifier', accounts => {
+
+  describe('Test SquareVerifier', function () {
+    beforeEach(async function () {
+      this.contract = await Verifier.new();
+    })
+
+    it('Test verification with correct proof', async function () {
+
+      let verified = await this.contract.verifyTx(zokratesProof.proof.a, zokratesProof.proof.b, zokratesProof.proof.c, zokratesProof.inputs);
+      assert.equal(verified, true, "Transaction should be blocked");
+
+    })
+
+    it('Test verification with incorrect proof', async function () {
+
+      let fakeInput = [7, 30];
+
+      let verified = await this.contract.verifyTx(zokratesProof.proof.a, zokratesProof.proof.b, zokratesProof.proof.c, fakeInput);
+
+      assert.equal(verified, false, "Transaction should be blocked");
+    })
+
+  });
+
+})
