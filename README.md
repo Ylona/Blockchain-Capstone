@@ -8,6 +8,26 @@ The capstone will build upon the knowledge you have gained in the course in orde
 * SolnSqureVerifier: 0x9D58ebD5B8569Abc7769B067C4388508416C0391
 * OpenSea: https://testnets.opensea.io/collection/unidentified-contract-h63vtcp1cs?tab=activity
 
+# Testing
+```
+npm install
+
+ganache-cli
+cd <Project/folder>eth-contracts
+truffle compile
+truffle test
+```
+
+# Versions
+| Software | Version  |
+|----------|:--------:|
+| Truffle  |  5.4.30  |
+| Node     | 12.22.9  |
+| npm      | 6.14.15  |
+| Solidity      |  0.5.16  |
+| Web3.js      |  1.5.3   |
+
+
 # Project Resources
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
